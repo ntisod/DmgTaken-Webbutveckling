@@ -1,0 +1,40 @@
+/* Body */
+body {
+  background-color: #FFD4DC;  
+}
+/* Heading */
+h1 {
+   font: size 350%; font-family: Arial, Helvetica, sans-serif;
+}
+/* Subheading */
+h2 {
+  font-size: 175%;  
+}
+/* Regular Paragraph */
+p {
+   font-size: 125%;  
+}
+/* Bold paragraph */
+p.bold {
+    font-size: 115%;
+}
+/* End paragraph */
+p.end {
+  font-size: 135%;
+}
+/* Changes link color */
+a 
+{
+  color: #0000FF;
+}
+#wrap {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+#content {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+  
