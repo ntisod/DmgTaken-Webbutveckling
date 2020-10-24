@@ -1,11 +1,69 @@
 <!DOCTYPE HTML>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>om-mig-uppgift</title>
-  <link rel="stylesheet" href="style.css">
+<title>om-mig</title>
+<!-- Sidan är en inlämningsuppgift av Morgan Teräs, 2020 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=styles.css>
+<script src="javascript.js"></script>
 </head>
-<body>
-    <h1>Morgan Teräs</h1>
+<body onload="startTime()">
+<div class="header">
+  <h1>Om mig - Morgan Teräs</h1>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="timetxt" id="timetxt"></div>
+    <img class="profile" src="https://awoiaf.westeros.org/images/a/a0/Cristi_Balanescu_Jon_SnowGhost.png" alt="Profile Picture">
+    <p>Sida av Morgan Teräs &copy; <br> 24 / 10 - 2020</p>
+  </div>
+  <div class="rightcolumn">
+    <div class="nav">
+      <button id="button1" autofocus onfocus="firstFunction()">Bakgrund</button>
+      <button id="button2" onfocus="secondFunction()">Tankar om framtiden</button>
+      <button id="button3" onfocus="thirdFunction()">Favoritspel</button>
+      <a href="recept.html" class="buttonLink1" target="_blank">Recept</a>
+      <a href="https://www.ntigymnasiet.se/sodertalje/" class="buttonLink2" target="_blank">Gymnasium</a>
+      <a href="https://steamcommunity.com/id/dmgtaken" class="buttonLink3" target="_blank">Steam</a>
+    </div>
+    <div class="txtbox" id="box1">
+      <h2>Bakgrund</h2>
+      <p>Hej, jag heter Morgan Teräs och är 17 år gammal. Jag går på NTI-gymnasiet som ligger i södertälje och har fått i uppgift att göra en hemsida om mig själv. Mina favoritintressen är att spela datorspel och programmera.</p>
+    </div>
+    <div class="txtbox" id="box2">
+      <h2>Tankar om framtiden</h2>
+      <p>I framtiden vill jag bli en programmerare eller ingenjör, för att uppnå detta är mitt mål att komma in på KTH så jag kan få en bra utbildning. Jag vill detta eftersom jag är väldigt intresserad av teknik och vill vara med i förkanten i den teknologiska evolutionen.</p>
+    </div>
+    <div class="txtbox" id="box3">
+      <div class="list">
+        <a href="https://www.microsoft.com/en-us/p/halo-5-guardians/brrc2bp0g9p0" target="_blank" class="gamelink">
+          <img src="https://store-images.s-microsoft.com/image/apps.10920.69279545232152045.f1a4a87c-fcc9-4b7c-a620-f6c56eb2d5ad.537d404f-d551-430c-8000-9a4c657bf354" alt="Halo 5: Guardians">
+        </a>
+        <a href="https://www.microsoft.com/en-us/p/the-witcher-3-wild-hunt/br765873cqjd" target="_blank" class="gamelink">
+          <img src="https://store-images.s-microsoft.com/image/apps.28990.69531514236615003.8f0d03d6-6311-4c21-a151-834503c2901a.d629260e-2bc4-4588-950c-f278cbc22a64" alt="Witcher 3: Wild Hunt">
+        </a>
+        <a href="https://www.microsoft.com/en-us/p/destiny-2/bpq955fqfph6" target="_blank" class="gamelink">
+          <img src="https://store-images.s-microsoft.com/image/apps.1823.68655995542193491.c7adf441-d0c2-4f49-ba4f-695986defb97.6c40a2a5-b200-47f2-a544-5d6be322c2d5" alt="Destiny 2">
+        </a>
+        <a href="https://www.microsoft.com/en-us/p/titanfall-2/c0x2hnvh08fb" target="_blank" class="gamelink">
+          <img src="https://store-images.s-microsoft.com/image/apps.25984.65123785197113223.0191c6ed-9ff7-488b-b8cc-c338d3886461.8f235e4d-8c5a-46f3-b9ee-5c817f3f7a56" alt="Titanfall 2">
+        </a>
+        <a href="https://www.microsoft.com/en-us/p/forza-horizon-4/9pnqkhfld2wq" target="_blank" class="gamelink">
+          <img src="https://store-images.s-microsoft.com/image/apps.36093.14343301090572358.2000000000007864116.1feb0fed-abe9-4849-b638-8d7eca69cff4" alt="Forza Horizon 4">
+        </a>
+      </div>
+      <h2>Favoritspel</h2>
+      <ol>
+        <li>Halo 5: Guardians</li>
+        <li>Witcher 3: Wild Hunt</li>
+        <li>Destiny 2</li>
+        <li>Titanfall 2</li>
+        <li>Forza Horizon 4</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
