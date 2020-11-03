@@ -39,11 +39,11 @@ body {
   text-align: center;
   margin: 0;
 }
-.header {
+header {
   background-image: linear-gradient(#1D8DEE, #0A5FC2);
   padding: 25px;
 }
-.nav {
+nav {
   border-bottom: 3px solid #27384F;
   text-align: left;
   padding: 16px;
