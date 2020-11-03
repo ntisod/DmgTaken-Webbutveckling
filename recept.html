@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<title>Recept</title>
-<!-- Sidan är en inlämningsuppgift av Morgan Teräs, 2020 -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href=styles.css>
-<script src="javascript.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recept</title>
+  <!-- Sidan är en inlämningsuppgift av Morgan Teräs, 2020 -->
+  <link rel="stylesheet" href=styles.css>
+  <script src="javascript.js"></script>
 </head>
 <body onload="startTime()">
-<div class="header">
-    <h1>GräddTårta</h1>
-</div>
-<div class="row">
-  <div class="leftcolumn">
-    <div class="timetxt" id="timetxt"></div>
-    <img class="profile" src="https://www.recepten.se/bilder/recept/168/main/l/graeddtaarta.jpg" alt="GräddTårta1">
-    <p>Sida av Morgan Teräs &copy; <br> 24 / 10 - 2020</p>
+  <header>
+      <h1>GräddTårta</h1>
+  </header>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="timetxt" id="timetxt"></div>
+      <img class="profile" src="https://www.recepten.se/bilder/recept/168/main/l/graeddtaarta.jpg" alt="GräddTårta1">
+      <p>Sida av Morgan Teräs &copy; <br> 24 / 10 - 2020</p>
+    </div>
+    <div class="rightcolumn">
+      <nav>
+        <button id="button1" autofocus onfocus="firstFunction()">Information</button>
+        <button id="button2" onfocus="secondFunction()">Ingredienser</button>
+        <button id="button3" onfocus="thirdFunction()">Anvisningar</button>
+        <a href="om-mig.html" class="buttonLink1" target="_blank">Om-mig</a>
+      </nav>
+      <div class="txtbox" id="box1">
+        <h2>Information</h2>
+        <p>En klassik gräddtårta med hallon, smulton och blåbär.</p>
+        <img class="showcase" src="https://www.recepten.se/bilder/recept/168/steg/m/14/1/graeddtaarta-steg-15.jpg" alt="GräddTårta2">
+        <img class="showcase" src="https://www.recepten.se/bilder/recept/168/steg/m/15/0/graeddtaarta-steg-16.jpg" alt="GräddTårta3">
+      </div>
+      <div class="txtbox" id="box2">
+          <h2>Sockerkaksbotten:</h2>
+          <ul>
+              <li>4st ägg</li>
+              <li>2 dl strösocker</li>
+              <li>1 dl vetemjöl</li>
+              <li>0.75 dl potatismjöl</li>
+              <li>1.5 tsk bakpulver</li>
+          </ul>
+          <h2>Fyllning:</h2>
+          <ul>
+              <li>3 dl bär</li>
+              <li>2 dl vispgrädde</li>
+          </ul>
+          <h2>Garnering:</h2>
+          <ul>
+              <li>3 dl vispgrädde</li>
+              <li>2 dl bär</li>
+          </ul>
+          <h2>Marsankräm:</h2>
+          <ul>
+              <li>2.5 dl mjölk</li>
+              <li>2 msk strösocker</li>
+              <li>2 msk marsanpulver</li>
+          </ul>
+      </div>
+      <div class="txtbox" id="box3">
+        <h2>Anvisningar</h2>
+        <ol>
+          <li>Smörj en rund form med löstagbar kant, ca 24 cm i diameter och beströ den med ströbröd.</li>
+          <li>Mät upp ägg och strösocker i en bunke. till en nästan vit pösig smet, använd gärna elvisp med vispar.</li>
+          <li>Mät upp vetemjöl, potatismjöl och bakpulver i en annan bunke. Blanda till en jämn blandning utan klumpar.</li>
+          <li>Tillsätt mjöl-blandningen till ägg- och sockersmeten. Vispa på lägsta hastighet med elvispen till en jämn smet.</li>
+          <li>Häll smeten i formen. Grädda i nedre delen av ugnen i 175°C i ca 30 minuter tills kakan släpper kanten och kakan börjar sjunka lite. Prova gärna med en provsticka som ska förbli torr.</li>
+          <li>Låt kakan svalna. Ställ gärna formen på galler och lägg över en bakhandduk. När kakan svalnar sjunker den ihop lite grann. Under tiden tårtan svalnar kan man passa på att förbereda fyllningarna. Gör vaniljkrämen och vispa grädden. Om man ska använda frysta bär så tinar man dem. (Vill man förbereda kan man gärna låta kakan stå i sin form över natten).</li>
+          <li>Mät upp kall mjölk, strösocker och marsanpulver i en kastrull. Vispa och låt koka upp under omrörning. När det börjar koka så tjocknar den och tag då bort den från värmen. Är den lite lös kan man sänka värmen och låta koka en liten stund till. Dock så tjocknar krämen ytterligare när den svalnar. Låt marsankrämen svalna till rumstemperatur och låt stå i kylskåp minst 10 minuter.</li>
+          <li>Vispa grädden både till fyllningen och garneringen på en gång (totalt 5 dl om du bakar en tårta). Den ska vispas ganska fast, det ska bli toppar när man lyfter upp elvispen.</li>
+          <li>När tårtan svalnat kan man lägga ihop tårtan. Skär bottnen i 3 delar. (Använd en brödkniv och skär försiktigt runtom för att sedan omma in mot mitten. Använd stekspade för att lyfta bottnarna).</li>
+          <li>Lägg understa tårtbottnen på ett tårtfat.</li>
+          <li>Bred på vaniljkrämen</li>
+          <li>Lägg på nästa tårtbotten (mittendelen).</li>
+          <li>Fördela ut bären. Bred på grädden.</li>
+          <li>Lägg på den översta tårtbottnen.</li>
+          <li>Bred på grädden först runt kanterna och sedan ovanpå. Fördela ut bär eller frukt. Man kan också spritsa grädden om man vill ha en snyggare tårta. Ställ in gräddtårtan i kylen. Tårtan blir godast om den får stå ca 12 timmar innan servering så att fyllningarnas smak går in i bottnarna.</li>
+          <li>Servera tårtan, ät och njut.</li>
+        </ol>
+      </div>
+    </div>
   </div>
-  <div class="rightcolumn">
-    <div class="nav">
-      <button id="button1" autofocus onfocus="firstFunction()">Information</button>
-      <button id="button2" onfocus="secondFunction()">Ingredienser</button>
-      <button id="button3" onfocus="thirdFunction()">Anvisningar</button>
-      <a href="om-mig.html" class="buttonLink1" target="_blank">Om-mig</a>
-    </div>
-    <div class="txtbox" id="box1">
-      <h2>Information</h2>
-      <p>En klassik gräddtårta med hallon, smulton och blåbär.</p>
-      <img class="showcase" src="https://www.recepten.se/bilder/recept/168/steg/m/14/1/graeddtaarta-steg-15.jpg" alt="GräddTårta2">
-      <img class="showcase" src="https://www.recepten.se/bilder/recept/168/steg/m/15/0/graeddtaarta-steg-16.jpg" alt="GräddTårta3">
-    </div>
-    <div class="txtbox" id="box2">
-        <h2>Sockerkaksbotten:</h2>
-        <ul>
-            <li>4st ägg</li>
-            <li>2 dl strösocker</li>
-            <li>1 dl vetemjöl</li>
-            <li>0.75 dl potatismjöl</li>
-            <li>1.5 tsk bakpulver</li>
-        </ul>
-        <h2>Fyllning:</h2>
-        <ul>
-            <li>3 dl bär</li>
-            <li>2 dl vispgrädde</li>
-        </ul>
-        <h2>Garnering:</h2>
-        <ul>
-            <li>3 dl vispgrädde</li>
-            <li>2 dl bär</li>
-        </ul>
-        <h2>Marsankräm:</h2>
-        <ul>
-            <li>2.5 dl mjölk</li>
-            <li>2 msk strösocker</li>
-            <li>2 msk marsanpulver</li>
-        </ul>
-    </div>
-    <div class="txtbox" id="box3">
-      <h2>Anvisningar</h2>
-      <ol>
-        <li>Smörj en rund form med löstagbar kant, ca 24 cm i diameter och beströ den med ströbröd.</li>
-        <li>Mät upp ägg och strösocker i en bunke. till en nästan vit pösig smet, använd gärna elvisp med vispar.</li>
-        <li>Mät upp vetemjöl, potatismjöl och bakpulver i en annan bunke. Blanda till en jämn blandning utan klumpar.</li>
-        <li>Tillsätt mjöl-blandningen till ägg- och sockersmeten. Vispa på lägsta hastighet med elvispen till en jämn smet.</li>
-        <li>Häll smeten i formen. Grädda i nedre delen av ugnen i 175°C i ca 30 minuter tills kakan släpper kanten och kakan börjar sjunka lite. Prova gärna med en provsticka som ska förbli torr.</li>
-        <li>Låt kakan svalna. Ställ gärna formen på galler och lägg över en bakhandduk. När kakan svalnar sjunker den ihop lite grann. Under tiden tårtan svalnar kan man passa på att förbereda fyllningarna. Gör vaniljkrämen och vispa grädden. Om man ska använda frysta bär så tinar man dem. (Vill man förbereda kan man gärna låta kakan stå i sin form över natten).</li>
-        <li>Mät upp kall mjölk, strösocker och marsanpulver i en kastrull. Vispa och låt koka upp under omrörning. När det börjar koka så tjocknar den och tag då bort den från värmen. Är den lite lös kan man sänka värmen och låta koka en liten stund till. Dock så tjocknar krämen ytterligare när den svalnar. Låt marsankrämen svalna till rumstemperatur och låt stå i kylskåp minst 10 minuter.</li>
-        <li>Vispa grädden både till fyllningen och garneringen på en gång (totalt 5 dl om du bakar en tårta). Den ska vispas ganska fast, det ska bli toppar när man lyfter upp elvispen.</li>
-        <li>När tårtan svalnat kan man lägga ihop tårtan. Skär bottnen i 3 delar. (Använd en brödkniv och skär försiktigt runtom för att sedan omma in mot mitten. Använd stekspade för att lyfta bottnarna).</li>
-        <li>Lägg understa tårtbottnen på ett tårtfat.</li>
-        <li>Bred på vaniljkrämen</li>
-        <li>Lägg på nästa tårtbotten (mittendelen).</li>
-        <li>Fördela ut bären. Bred på grädden.</li>
-        <li>Lägg på den översta tårtbottnen.</li>
-        <li>Bred på grädden först runt kanterna och sedan ovanpå. Fördela ut bär eller frukt. Man kan också spritsa grädden om man vill ha en snyggare tårta. Ställ in gräddtårtan i kylen. Tårtan blir godast om den får stå ca 12 timmar innan servering så att fyllningarnas smak går in i bottnarna.</li>
-        <li>Servera tårtan, ät och njut.</li>
-      </ol>
-    </div>
-  </div>
-</div>
 </body>
 </html>
