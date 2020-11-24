@@ -31,6 +31,10 @@ img.profile {
   height:auto;
   max-width: 100%;
 }
+figcaption {
+  color: #FFFFFF;
+  font-size: 100%;
+}
 
 /* Body elements */
 body {
@@ -54,9 +58,6 @@ nav {
   padding-left: 20px;
   padding-right: 20px;
   line-height: 1.5;
-}
-.list {
-  padding-top: 20px;
 }
 
 /* Textsquares */
