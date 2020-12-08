@@ -6,30 +6,37 @@
   <title>recept</title>
   <!-- Sidan är en inlämningsuppgift av Morgan Teräs, 2020 -->
   <link rel="stylesheet" href=styles.css>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="javascript.js"></script>
 </head>
 <body onload="startTime()">
-  <header>
-      <h1>GräddTårta</h1>
-  </header>
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="timetxt" id="timetxt"></div>
-      <img class="profile" src="https://cdn.pixabay.com/photo/2016/02/03/19/46/coffee-break-1177835__340.jpg" alt="Gräddtårta">
-      <figcaption><a href="https://pixabay.com/sv/photos/fika-kaka-jordgubbe-t%C3%A5rta-1177835/">Gräddtårta</a> license <a rel="license" href="https://creativecommons.org/licenses/publicdomain/">CC0</a></figcaption>
+  <header class="col-12">
+    <div class="sign">
+      <span class="sign__word">Recept - Gräddtårta</span>
     </div>
-    <div class="rightcolumn">
+  </header>
+  <div class="row col-12">
+    <div class="leftcolumn col-3">
+      <div class="mypicture">
+        <div class="timetxt" id="timetxt"></div>
+        <img class="profile" src="https://cdn.pixabay.com/photo/2016/02/03/19/46/coffee-break-1177835__340.jpg" alt="Gräddtårta">
+        <div class="container">
+          <h2 class="black">Gräddtårta</h3>
+          <p class="black">En klassik gräddtårta med hallon, smulton och blåbär</p>
+        </div>
+      </div>
+    </div>
+    <div class="rightcolumn col-9">
       <nav>
-        <a href="index.html" class="buttonLink1">Index</a>
-        <button id="button1" autofocus onfocus="firstFunction()">Information</button>
-        <button id="button2" onfocus="secondFunction()">Ingredienser</button>
-        <button id="button3" onfocus="thirdFunction()">Anvisningar</button>
+        <button id="button1" autofocus onfocus="firstFunction()">INFORMATION</button>
+        <button id="button2" onfocus="secondFunction()">INGREDIENSER</button>
+        <button id="button3" onfocus="thirdFunction()">ANVISNINGAR</button>
       </nav>
-      <div class="txtbox" id="box1">
+      <div class="txtbox col-9" id="box1">
         <h2>Information</h2>
         <p>En klassik gräddtårta med hallon, smulton och blåbär.</p>
       </div>
-      <div class="txtbox" id="box2">
+      <div class="txtbox col-9" id="box2">
           <h2>Sockerkaksbotten:</h2>
           <ul>
               <li>4st ägg</li>
@@ -55,7 +62,7 @@
               <li>2 msk marsanpulver</li>
           </ul>
       </div>
-      <div class="txtbox" id="box3">
+      <div class="txtbox col-9" id="box3">
         <h2>Anvisningar</h2>
         <ol>
           <li>Smörj en rund form med löstagbar kant, ca 24 cm i diameter och beströ den med ströbröd.</li>
@@ -79,12 +86,28 @@
     </div>
   </div>
   <footer>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-      <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png">
-    </a> 
-    <p>
-      2020, Morgan Teräs <a href="http://www.ntigymnasiet.se/sodertalje/">NTI gymnasiet Södertälje.</a>
-    </p>
+    <nav class="links col-12">
+      <ul class="nav">
+        <li class="nav"><a href="recept.html">RECEPT</a></li>
+        <li class="nav"><a href="om-mig.html">OM MIG</a></li>
+        <li class="nav"><a href="index.html">PORTFOLIO</a></li>
+      </ul>
+      </nav>
+    <div class="icons col-12">
+      <!-- NTI Gymnasiet-->
+      <a href="https://www.ntigymnasiet.se/sodertalje/" class="fa fa-university"></a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/DmgTaken" class="fa fa-twitter"></a>
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DmgTaken" class="fa fa-reddit-alien"></a>
+      <!-- Steam -->
+      <a href="https://steamcommunity.com/id/dmgtaken" class="fa fa-steam"></a>
+      <!-- Github-->
+      <a href="https://github.com/DmgTaken" class="fa fa-github"></a>
+    </div>
+    <div class="copyrighttxt col-12">
+      <p class="copyright">&copy; 2020 Copyright: <a href="dmgtaken-webbutveckling.com">DmgTaken-Webbutveckling.com</a></p>
+    </div>
   </footer>
 </body>
 </html>
