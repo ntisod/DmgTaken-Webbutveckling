@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>om-mig</title>
+  <!-- Sidan är en inlämningsuppgift av Morgan Teräs, 2020 -->
+  <link rel="stylesheet" href=styles.css>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="javascript.js"></script>
+</head>
+<body onload="startTime()">
+  <header>
+    <h1><span>Om mig - Morgan Teräs</span></h1>
+  </header>
+  <div class="row col-12">
+    <div class="leftcolumn col-3">
+      <div class="timetxt" id="timetxt"></div>
+      <img class="profile" src="images/Morgan.jpg" alt="Profile Picture">
+    </div>
+    <div class="rightcolumn col-9">
+      <nav class="col 9">
+        <a href="recept.html" class="buttonLink1">Recept</a>
+        <button id="button1" autofocus onfocus="firstFunction()">Bakgrund</button>
+        <button id="button2" onfocus="secondFunction()">Tankar om framtiden</button>
+        <button id="button3" onfocus="thirdFunction()">Favoritspel</button>
+      </nav>
+      <div class="txtbox col-9" id="box1">
+        <h2>Bakgrund</h2>
+        <p>Hej, jag heter Morgan Teräs och är 17 år gammal. Jag går på NTI-gymnasiet som ligger i södertälje och har fått i uppgift att göra en hemsida om mig själv. Mina favoritintressen är att spela datorspel och programmera.</p>
+      </div>
+      <div class="txtbox col-9" id="box2">
+        <h2>Tankar om framtiden</h2>
+        <p>I framtiden vill jag bli en programmerare eller ingenjör, för att uppnå detta är mitt mål att komma in på KTH så jag kan få en bra utbildning. Jag vill detta eftersom jag är väldigt intresserad av teknik och vill vara med i förkanten i den teknologiska evolutionen.</p>
+      </div>
+      <div class="txtbox col-9" id="box3">
+        <h2>Favoritspel</h2>
+        <ol>
+          <li>Witcher 3: Wild Hunt</li>
+          <li>Halo 5: Guardians</li>
+          <li>Destiny 2</li>
+          <li>Titanfall 2</li>
+          <li>Forza Horizon 4</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="row col-12">
+      <div class="leftfooter col-6">
+        <div class="icons">
+          <!-- NTI Gymnasiet-->
+          <a href="https://www.ntigymnasiet.se/sodertalje/" class="fa fa-university"></a>
+
+          <!-- Twitter -->
+          <a href"https://twitter.com/DmgTaken" class="fa fa-twitter"></a>
+
+          <!-- Reddit -->
+          <a href="https://www.reddit.com/user/DmgTaken" class="fa fa-reddit-alien"></a>
+
+          <!-- Steam -->
+          <a href="https://steamcommunity.com/id/dmgtaken" class="fa fa-steam"></a>
+
+          <!-- Github-->
+          <a href="https://github.com/DmgTaken" class="fa fa-github"></a>
+
+        </div>
+      </div>
+      <div class="rightfooter col-6">
+        <p>test2</p>
+      </div>
+    </div>
+    <div class="copyrightfootertxt col-12">
+      <p class="copyright">&copy; 2020 Copyright: <a href="dmgtaken-webbutveckling.com">DmgTaken-Webbutveckling.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
