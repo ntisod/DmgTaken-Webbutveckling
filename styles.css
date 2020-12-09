@@ -1,6 +1,6 @@
 @font-face {
   font-family: myFont;
-  src: url("assets/vibur-regular.ttf");
+  src: url("assets/vibur.ttf");
 }
 
 /* Text elements */
@@ -51,11 +51,12 @@ img.profile {
 
 /* Semantic Elements */
 body {
-  font-family: "Roboto",sans-serif;
+  font-family: Verdana, sans-serif;
   background-color: #212529;
   text-align: center;
   margin: 0;
-  overflow-y: auto;
+  padding: 0;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 header {
@@ -70,7 +71,6 @@ header {
 nav {
   text-align: left;
   padding: 16px;
-  background-color: #212529;
 }
 footer {
   text-align: center;
@@ -99,15 +99,12 @@ div.txtbox {
   padding-left: 24px;
   padding-right: 24px;
   line-height: 1.5;
-}
-div.sidetext {
-  color: #FFFFFF;
-  font-size: 18px;
-  padding: 8px;
-  line-height: 1.5;
+  height: 960px;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.2);
 }
 div.timetxt {
-  background: url("Assets/Circle.gif") no-repeat 50% 50%;
+  background: url("assets/circle.gif") no-repeat 50% 50%;
   background-size: cover;
   color: #FFFFFF;
   text-shadow: 2px 2px #000000;
@@ -204,20 +201,8 @@ li a:hover {
   display: table;
   clear: both;
 }
-.rightcolumn 
-{
-  float: left;
-  width: 75%;
-  height: 1080px;
-  background-color: rgba(0,0,0,0.2);
-}
-.leftcolumn {
-  float: left;
-  width: 25%;
-}
 .column {
   float: left;
-  width: 50%;
 }
 
 /* Buttons */
