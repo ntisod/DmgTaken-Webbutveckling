@@ -2,6 +2,10 @@
   font-family: myFont;
   src: url("assets/vibur.ttf");
 }
+@font-face {
+  font-family: Roboto;
+  src: url("assets/roboto.ttf");
+}
 
 /* Text elements */
 h1 { 
