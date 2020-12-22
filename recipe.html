@@ -16,65 +16,101 @@
     </div>
   </header>
   <div class="row col-12">
-    <div class="column col-3">
-      <div class="time" id="time"></div>
-      <img src="assets/cream-cake.jpg" alt="Gräddtårta">
-      <div class="container">
-        <h1>Cream Cake</h1>
+    <div class="column col-3 showcase">
+      <div class="frame">
+        <div class="time" id="time"></div>
+      </div>
+      <div class="imgframe">
+        <img src="assets/cream-cake.jpg" alt="Gräddtårta">
+        <div class="imgsource">Picture: Brimbuse, Pixabay</div>
       </div>
     </div>
     <div class="column col-9">
-      <nav>
-        <button id="button1" autofocus onfocus="firstFunction()">INFORMATION</button>
-        <button id="button2" onfocus="secondFunction()">INSTRUCTIONS</button>
-        <button id="button3" onfocus="thirdFunction()">FOOD SEASON</button>
+      <nav class="center col 9">
+        <button id="button1" autofocus onfocus="firstFunction()">INSTRUCTIONS</button>
+        <button id="button2" onfocus="secondFunction()">EMPTY</button>
+        <button id="button3" onfocus="thirdFunction()">EMPTY</button>
       </nav>
       <div class="box" id="box1">
         <h1>INFORMATION</h1>
         <p>A classic cream cake with raspberries, strawberries and blueberries!</p>
-      </div>
-      <div class="box" id="box2">
         <h1>INGREDIENTS</h1>
-        <p>Cake base:</p>
         <ul>
-            <li>4 eggs</li>
-            <li>2 dl sugar</li>
-            <li>1 dl wheat flour</li>
-            <li>0.75 dl potato flour</li>
-            <li>1.5 tsp baking powder</li>
-        </ul>
-        <p>Filling:</p>
-        <ul>
-            <li>3 dl berries</li>
-            <li>2 dl cream</li>
-            <li>5 dl vanilla cream</li>
-        </ul>
-        <p>Toppings:</p>
-        <ul>
-            <li>3 dl whipped cream</li>
-            <li>2 dl berries</li>
+          <li>4 eggs</li>
+          <li>2 dl sugar</li>
+          <li>1 dl wheat flour</li>
+          <li>1 dl potato flour</li>
+          <li>2 tsp baking powder</li>
+          <li>5 dl berries</li>
+          <li>2 dl cream</li>
+          <li>5 dl vanilla cream</li>
+          <li>3 dl whipped cream</li>
         </ul>
         <h1>INSTRUCTIONS</h1>
-        <ol>
-          <li>Grease a round mold with a removable edge and sprinkle it with breadcrumbs.</li>
-          <li>Measure out eggs and powdered sugar in a bowl. Whisk to an almost white puffy batter.</li>
-          <li>Measure out wheat flour, potato flour and baking powder in another bowl. Mix to an even mixture without lumps.</li>
-          <li>Add the flour mixture to the egg and sugar batter. Whisk to a smooth batter.</li>
-          <li>Pour the batter into the mold. Bake in the lower part of the oven at 175 ° C for about 30 minutes until the cake releases the edge and the cake begins to sink a little.</li>
-          <li>Let the cake cool. Feel free to place the mold on a wire rack and place a baking towel over it. When the cake cools, it collapses a little.</li>
-          <li>Whip the cream for both the filling and the garnish at once.</li>
-          <li>When the cake has cooled, you can put the cake together. Cut the bottom into 3 parts.</li>
-          <li>Place the bottom of the cake base on a cake pan.</li>
-          <li>Spread on the vanilla cream.</li>
-          <li>Put on the next cake base.</li>
-          <li>Distribute the berries. Spread on the cream.</li>
-          <li>Put on the top cake base.</li>
-          <li>Spread the cream first around the edges and then on top. Distribute berries or fruit. Set the cream cake in the fridge.</li>
-          <li>Serve the cake, eat and enjoy.</li>
-        </ol>
+        <label class="container">Grease a round mold with a removable edge and sprinkle it with breadcrumbs.
+          <input type="checkbox" checked="true">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Measure out eggs and powdered sugar in a bowl. Whisk to an almost white puffy batter.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Measure out wheat flour, potato flour and baking powder in another bowl. Mix to an even mixture without lumps.
+          <input type="checkbox">              
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Add the flour mixture to the egg and sugar batter. Whisk to a smooth batter.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+         <label class="container">Pour the batter into the mold. Bake in the lower part of the oven at 175 ° C for about 30 minutes until the cake releases the edge and the cake begins to sink a little.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Let the cake cool. Feel free to place the mold on a wire rack and place a baking towel over it. When the cake cools, it collapses a little.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Whip the cream for both the filling and the garnish at once.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">When the cake has cooled, you can put the cake together. Cut the bottom into 3 parts.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Place the bottom of the cake base on a cake pan.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Spread on the vanilla cream.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Put on the next cake base.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Distribute the berries. Spread on the cream.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Put on the top cake base.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Spread the cream first around the edges and then on top. Distribute berries or fruit. Set the cream cake in the fridge.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Serve the cake, eat and enjoy.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="box" id="box2">
       </div>
       <div class="box" id="box3">
-        <p>FIND FOOD SEASON BUTTON</p>
       </div>
     </div>
   </div>
