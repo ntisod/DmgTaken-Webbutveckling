@@ -10,7 +10,6 @@ function secondFunction() {
   document.getElementById("box1").style.display = ("none");
   document.getElementById("box2").style.display = ("block");
 }
-
 function startTime() {
   var today = new Date();
   var h = today.getHours();
