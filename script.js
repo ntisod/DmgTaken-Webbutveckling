@@ -32,3 +32,11 @@ function textChange() {
   document.getElementById("rubrik").innerHTML = "Morgan Teräs";
   document.getElementById("text").style.backgroundColor = "#00FFEE";
 }
+function pictureChange() {
+  if (document.getElementById("picture").src == "https://upload.wikimedia.org/wikipedia/en/7/76/Darth_Vader.jpg") {
+    document.getElementById("picture").src = "https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png";
+  }
+  else {
+    document.getElementById("picture").src = "https://upload.wikimedia.org/wikipedia/en/7/76/Darth_Vader.jpg";
+  }
+}
