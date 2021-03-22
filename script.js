@@ -25,5 +25,6 @@ function startTime() {
     return i;
 }
 function authorDialog() {
-  alert('Morgan har skapat denna sida, året är ' + getYear());
+  var today = new Date();
+  alert("Morgan har skapat denna sida, året är " + today.getFullYear());
 }
