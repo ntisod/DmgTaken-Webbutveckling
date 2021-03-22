@@ -24,3 +24,6 @@ function startTime() {
     if (i < 10) {i = "0" + i};
     return i;
 }
+function authorDialog() {
+  alert('Morgan har skapat denna sida, året är ' + getYear())
+}
