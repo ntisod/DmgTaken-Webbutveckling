@@ -17,8 +17,7 @@ function startTime() {
   var s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('time').innerHTML =
-  ("0" + h).slice(-2) + ":" + ("0" + m).slice(-2) + ":" + ("0" + s).slice(-2);
+  document.getElementById('time').innerHTML = ("0" + h).slice(-2) + ":" + ("0" + m).slice(-2) + ":" + ("0" + s).slice(-2);
   var t = setTimeout(startTime, 500);
   }
   function checkTime(i) {
