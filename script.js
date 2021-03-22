@@ -28,3 +28,7 @@ function authorDialog() {
   var today = new Date();
   alert("Morgan har skapat denna sida, året är " + today.getFullYear());
 }
+function textChange() {
+  document.getElementById("rubrik").innerHTML = "Morgan Teräs";
+  document.getElementById("text").style.backgroundColor = "#00FFEE";
+}
