@@ -40,3 +40,42 @@ function pictureChange() {
     document.getElementById("picture").src = "https://upload.wikimedia.org/wikipedia/en/7/76/Darth_Vader.jpg";
   }
 }
+function writeText() {
+  var fnamn = document.getElementById("fnamn").value;
+
+  var text = "Hej, " + fnamn + "!";
+  document.getElementById("demo").innerHTML = text;
+}
+function calculate() {
+  var tal1 = parseFloat(document.getElementById("tal1").value);
+  var tal2 = parseFloat(document.getElementById("tal2").value);
+  var text;
+  if (document.getElementById("type").value == "+") {
+    text = parseFloat(tal1 + tal2);
+  }
+  else if (document.getElementById("type").value == "-") {
+    text = parseFloat(tal1 - tal2);
+  }
+  else if (document.getElementById("type").value == "*") {
+    text = parseFloat(tal1 * tal2);
+  }
+  else if (document.getElementById("type").value == "/") {
+    text = parseFloat(tal1 / tal2);
+  }
+
+  document.getElementById("tal3").value = text;
+}
+function changeType() {
+  if (document.getElementById("type").value == "+") {
+    document.getElementById("type").value = "-";
+  }
+  else if (document.getElementById("type").value == "-") {
+    document.getElementById("type").value = "*";
+  }
+  else if (document.getElementById("type").value == "*") {
+    document.getElementById("type").value = "/";
+  }
+  else if (document.getElementById("type").value == "/") {
+    document.getElementById("type").value = "+";
+  }
+}
