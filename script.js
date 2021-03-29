@@ -79,3 +79,22 @@ function changeType() {
     document.getElementById("type").value = "+";
   }
 }
+
+function changeChoices() {
+  var items;
+
+  if (document.getElementById("software").checked == true) {
+    items = ["", "Engelska 7", "Idrott och hälsa 2", "Entreprenörskap", "Modersmål", "Digitalt skapande 2", "Fysik 2", "Matematik 4"];
+  }
+  else if (document.getElementById("engineering").checked == true) {
+    items = ["", "Engelska 7", "Idrott och hälsa 2", "Entreprenörskap", "Modersmål", "Digitalt skapande 1", "Webbserverprogrammering 1", "Matematik 5"];
+  }
+
+  var str = ""
+  for (var item of items) {
+    str += "<option>" + item + "</option>"
+  } 
+  document.getElementById("choice1").innerHTML = str;
+  document.getElementById("choice2").innerHTML = str;
+  document.getElementById("choice3").innerHTML = str;
+}

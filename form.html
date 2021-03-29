@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <!-- This page is a assignment by Morgan Teräs, 2021 -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <form action="">
+    <label for="fname">Förnamn:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Efternamn:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email-adress</label><br>
+    <input type="text" id="email" name="email"><br>
+
+    <p>Fördjupning</p>
+    <label for="software">Software</label>
+    <input type="radio" name="answer" id="software" onchange="changeChoices()"><br>
+    <label for="engineering">Engineering</label>
+    <input type="radio" name="answer" id="engineering" onchange="changeChoices()"><br>
+
+    <p>Individuella val</p>
+    <label for="choice1">Första val</label>
+    <select id="choice1" name="choice1">
+    </select><br>
+    <label for="choice2">Andra val</label>
+    <select id="choice2" name="choice2">
+    </select><br>
+    <label for="choice3">Reserv val</label>
+    <select id="choice3" name="choice3">
+    </select><br>
+    <br>
+    <input type="submit" value="Submit">
+  </form> 
+</body>
+</html>
