@@ -5,35 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
   <!-- This page is a assignment by Morgan Teräs, 2021 -->
+  <link rel="stylesheet" href=styles.css>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="script.js"></script>
 </head>
 <body>
-  <form>
-    <label for="fname">Förnamn:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Efternamn:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Email-adress</label><br>
-    <input type="text" id="email" name="email"><br>
-
-    <p>Fördjupning</p>
-    <label for="software">Software</label>
-    <input type="radio" name="answer" id="software" onchange="changeChoices()"><br>
-    <label for="engineering">Engineering</label>
-    <input type="radio" name="answer" id="engineering" onchange="changeChoices()"><br>
-
-    <p>Individuella val</p>
-    <label for="choice1">Första val</label>
-    <select id="choice1" name="choice1">
-    </select><br>
-    <label for="choice2">Andra val</label>
-    <select id="choice2" name="choice2">
-    </select><br>
-    <label for="choice3">Reserv val</label>
-    <select id="choice3" name="choice3">
-    </select><br>
-    <br>
-    <input type="submit" value="Submit">
-  </form> 
+  <div class="col-6">
+    <form>
+      <h1>Formulär fär Individuellt val</h1>
+      <div>
+        <label>Förnamn:
+          <input type="text" id="fname">
+        </label>
+        <label>Efternamn:
+          <input type="text" id="lname">
+        </label>
+      </div>
+      <label class="label">Email-adress
+        <input type="text" id="email">
+      </label><br><br>
+  
+      <label class="container">Software
+        <input type="radio" name="answer" id="software" onchange="changeChoices()">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Engineering
+        <input type="radio" name="answer" id="engineering" onchange="changeChoices()">
+        <span class="checkmark"></span>
+      </label><br>
+  
+      <label>Första val:
+        <select id="choice1"></select>
+      </label><br>
+      <label>Andra val:
+        <select id="choice2"></select>
+      </label><br>
+      <label>Reserv val:
+        <select id="choice3"></select>
+      </label><br><br>
+      <input type="button" value="Submit" onclick="addText()">
+    </form>
+  </div>
+  <div class="col-6">
+    <pre id="text"></pre>
+  </div>
 </body>
 </html>
