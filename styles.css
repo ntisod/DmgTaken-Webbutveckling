@@ -103,9 +103,11 @@ ul {
   padding: 0;
 }
 nav {
-  background: #379bff;
   display: flex;
   justify-content: center;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  animation: rainbow 18s ease infinite;
 }
 nav li {
   float: left;
@@ -120,8 +122,14 @@ nav a {
 nav a:hover {
   background-color: rgba(0,0,0,0.2);
 }
+nav a.chosen {
+  background-color: rgba(0,0,0,0.1);
+}
+nav a.chosen:hover {
+  background-color: rgba(0,0,0,0.3);
+}
 div.copyright {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +139,7 @@ div.copyright {
 
 /* ////////// ICONS //////////*/
 div.icons {
+  background-color: rgba(0,0,0,0.2);
   height: 72px;
   display: flex;
   justify-content: center;
@@ -139,11 +148,11 @@ div.icons {
 .fa {
   text-decoration: none;
   box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24), 0 4px 16px 0 rgba(0,0,0,0.18);
-  font-size: 1.4em !important;
-  padding: 16px;
+  font-size: 2em !important;
+  padding: 12px;
   width: 24px;
   text-align: center;
-  margin: 0px 6px;
+  margin: 0px 8px;
   border-radius: 50%;
 }
 .fa:hover {
@@ -173,15 +182,9 @@ div.icons {
 
 /* ////////// LEFTCOLUMN //////////*/
 .gradient {
-  background: #379bff;
-  background: linear-gradient(30deg, rgba(255,0,255,1) 0%, rgba(55,155,255,1) 75%);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-}
-@keyframes gradient {
-	0% {background-position: 0% 50%;}
-	50% {background-position: 100% 50%;}
-	100% {background-position: 0% 50%;}
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  animation: rainbow 18s ease infinite;
 }
 .timeframe {
   height: 82px;
@@ -228,7 +231,7 @@ div[id^='box'] {
   text-align: left;
   display: none;
   padding: 0px 24px 24px 24px;
-  min-height: 960px;
+  min-height: 600px;
 }
 
 
@@ -341,4 +344,10 @@ form div label {
 label {
   display: inline-block;
   width: 30%;
+}
+
+@keyframes rainbow {
+  0%{background: #379bff}
+  50%{background: #f449fd}
+  100%{background: #379bff}
 }

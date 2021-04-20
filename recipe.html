@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>recept</title>
+  <title>RECIPE</title>
   <!-- This page is a assignment by Morgan Teräs, 2020 -->
   <link rel="stylesheet" href=styles.css>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,9 +12,17 @@
 <body onload="startTime()">
   <header class="col-12">
     <div class="sign">
-      <span class="sign__word">Recipe - Cream Cake</span>
+      <span class="sign__word">RECIPE - Cream Cake</span>
     </div>
   </header>
+  <nav class="col-12">
+    <ul>
+      <li><a href="index.html">INDEX</a></li>
+      <li><a href="about-me.html">ABOUT ME</a></li>
+      <li><a class="chosen" href="recipe.html">RECIPE</a></li>
+      <li><a href="form.html">FORM</a></li>
+    </ul>
+    </nav>
   <div class="col-3 gradient">
     <div class="timeframe">
       <div class="time" id="time"></div>
@@ -26,8 +34,8 @@
   </div>
   <div class="col-9">
     <div>
-      <button id="button1" autofocus onfocus="firstFunction()">INSTRUCTIONS</button>
-      <button id="button2" onfocus="secondFunction()">EMPTY</button>
+      <button id="button1" autofocus onfocus="firstFunction()">INFORMATION</button>
+      <button id="button2" onfocus="secondFunction()">INSTRUCTIONS</button>
     </div>
     <div id="box1">
       <h1>INFORMATION</h1>
@@ -44,6 +52,8 @@
         <li>5 dl vanilla cream</li>
         <li>3 dl whipped cream</li>
       </ul>
+    </div>
+    <div id="box2">
       <h1>INSTRUCTIONS</h1>
       <label class="container">Grease a round mold with a removable edge and sprinkle it with breadcrumbs.
         <input type="checkbox" checked="true">
@@ -106,16 +116,8 @@
         <span class="checkmark"></span>
       </label>
     </div>
-    <div id="box2"></div>
   </div>
   <footer>
-    <nav class="col-12">
-      <ul>
-        <li><a href="index.html">INDEX</a></li>
-        <li><a href="about-me.html">ABOUT ME</a></li>
-        <li><a href="recipe.html">RECIPE</a></li>
-      </ul>
-      </nav>
     <div class="col-12 icons">
       <!-- NTI Gymnasium-->
       <a href="https://www.ntigymnasiet.se/sodertalje/" class="fa fa-university"></a>
