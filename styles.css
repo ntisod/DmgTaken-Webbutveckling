@@ -35,9 +35,11 @@ hr {
   border-radius: 5px;
 }
 img {
+  image-rendering: auto;
   max-width: 100%;
   height:auto;
   vertical-align: top;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24), 0 4px 16px 0 rgba(0,0,0,0.18);
 }
 figcaption {
   position: absolute;
@@ -99,12 +101,12 @@ header {
 ul {
   list-style-type: none;
   text-align: left;
-  margin: 0;
+  margin: 0px 16px 0px 16px;
   padding: 0;
 }
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 1800% 1800%;
   animation: rainbow 18s ease infinite;
@@ -112,10 +114,11 @@ nav {
 nav li {
   float: left;
   padding: 0; 
+  width: 12em;
 }
 nav a {
-  font-size: 1.2em;
-  padding: 12px 32px;
+  font-size: 1.25em;
+  padding: 16px;
   display: block;
   text-align: center;
 }
@@ -140,7 +143,6 @@ div.copyright {
 /* ////////// ICONS //////////*/
 div.icons {
   background-color: rgba(0,0,0,0.2);
-  height: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,11 +150,12 @@ div.icons {
 .fa {
   text-decoration: none;
   box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24), 0 4px 16px 0 rgba(0,0,0,0.18);
-  font-size: 2em !important;
-  padding: 12px;
-  width: 24px;
+  font-size: 1.5em !important;
+  padding: 0.75em;
+  width: 1em;
+  height: 1em;
   text-align: center;
-  margin: 0px 8px;
+  margin: 0.5em 0.5em;
   border-radius: 50%;
 }
 .fa:hover {
@@ -211,7 +214,7 @@ div.icons {
 
 /* ////////// RIGHTCOLUMN ////////// */
 button {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
   outline:none;
@@ -230,7 +233,7 @@ button:active {
 div[id^='box'] {
   text-align: left;
   display: none;
-  padding: 0px 24px 24px 24px;
+  padding: 0px 24px 8em 24px;
   min-height: 600px;
 }
 
@@ -307,7 +310,7 @@ form {
 input[type=button] {
   font: 300 1em/1.5 'Quicksand', sans-serif;
   background-color: #4CAF50;
-  color: white;
+  color: #fff;
   padding: 10px 5%;
   border: none;
   cursor: pointer;
@@ -341,13 +344,44 @@ form div label {
   width: 20%;
 }
 
-label {
-  display: inline-block;
+form label {
   width: 30%;
+  display: block;
 }
 
 @keyframes rainbow {
   0%{background: #379bff}
-  50%{background: #f449fd}
+  50%{background: #8c00ff}
   100%{background: #379bff}
+}
+
+.gallery {
+  list-style-type: none;
+  height: 100%;
+  overflow: hidden;
+  padding: 24px 0px 0px 0px;
+}
+.gallery li {
+  text-align: center;
+  position: relative;
+  float: left;
+  height: 500px;
+  width: 400px;
+}
+.img_description {
+  padding: 32px;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.gallery li:hover .img_description {
+  visibility: visible;
+  opacity: 1;
 }
