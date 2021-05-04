@@ -9,20 +9,64 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="script.js"></script>
 </head>
-<body>
+<body onload="startTime()">
   <header>
     <div class="sign">
       <span class="sign__word">HOME</span>
     </div>
   </header>
-  <nav class="col-12">
+  <div class="col-3 column">
+    <div class="timeframe">
+      <div class="time" id="time"></div>
+    </div>
+    <div class="imgframe">
+      <img src="assets/nti-gymnasiet.jpg" alt="NTI Gymnasiet">
+    </div>
+  </div>
+  <nav class="col-9">
     <ul>
-      <li><a class="chosen">HOME</a></li>
+      <li><a class="active">HOME</a></li>
       <li><a href="about-me.html">ABOUT ME</a></li>
       <li><a href="recipe.html">RECIPE</a></li>
-      <li><a href="form.html">FORM</a></li>
     </ul>
-    </nav>
+  </nav>
+  <div class="col-9">
+    <div>
+      <button id="button1" autofocus onfocus="firstFunction()">THIS WEBSITE</button>
+      <button id="button2" onfocus="secondFunction()">FORM</button>
+    </div>
+    <div id="box1">
+      <h1>ABOUT THIS WEBSITE</h1>
+      <p>This website is a school project at NTI Gymnasium where I, Morgan Teräs, had to program a website from scratch for the "Web Development" course. This website will not be used for monetary gain or similar activites and was only made for educational purposes.</p>
+      <h1>ABOUT ME</h1>
+      <p>Hello, my name is Morgan Teräs and I am 17 years old. I am currently a student at NTI-gymnasium which is located in Södertälje and I have been tasked with making a website about myself. My favorite hobbies are to play computer games and program. You can learn further about me in the "About me" section </p>
+    </div>
+    <div id="box2">
+      <form>
+        <h1>FORM FOR INDIVIDIAL CHOICE</h1>
+        <label>Name: </label>
+        <input type="text" id="fname">
+        <input type="text" id="lname">
+        <label class="label">Email-adress</label>
+        <input style="width: 400px;"type="text" id="email">
+        <label class="container">Software
+          <input type="radio" name="answer" id="software" onchange="changeChoices()">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Engineering
+          <input type="radio" name="answer" id="engineering" onchange="changeChoices()">
+          <span class="checkmark"></span>
+        </label><br>
+        <label>First choice:</label>
+        <select id="choice1"></select>
+        
+        <label>Second choice:</label>
+        <select id="choice2"></select><br>
+        <input type="button" value="SUBMIT" onclick="window.location.reload()">
+      </form>
+    </div>
+  </div>
+  </div>
   <footer>
     <div class="col-12 icons">
       <!-- NTI Gymnasium-->
