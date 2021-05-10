@@ -37,7 +37,7 @@ img {
   vertical-align: top;
   box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24), 0 4px 16px 0 rgba(0,0,0,0.18);
 }
-figcaption {
+.imgcopyright {
   background-color: #000;
   max-width: 400px;
   display: block;
