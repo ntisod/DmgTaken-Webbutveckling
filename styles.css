@@ -306,16 +306,27 @@ div[id^='box'] {
 
 
 /* ////////// FORM ////////// */
-input[type=button] {
+input[type=submit] {
   font: 300 1em/1.5 'Quicksand', sans-serif;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #00ff00;
   padding: 10px 25px;
   border: none;
   cursor: pointer;
 }
-input[type=button]:hover {
-  background-color: #45a049;
+input[type=submit]:hover {
+  background-color: #00ff0080;
+}
+input[type=reset] {
+  font: 300 1em/1.5 'Quicksand', sans-serif;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+input[type=reset]:hover {
+  background-color: #ff000080;
 }
 input[type=text] {
   font: 300 1em/1.5 'Quicksand', sans-serif;

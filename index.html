@@ -44,25 +44,31 @@
     <div id="box2">
       <form>
         <h1>FORM FOR INDIVIDIAL CHOICE</h1>
-        <label>Name: </label>
-        <input type="text" id="fname">
+        <label>Name</label>
+        <input type="text" id="fname" name="name">
         <input type="text" id="lname">
+        
         <label class="label">Email-adress</label>
-        <input style="width: 400px;"type="text" id="email">
+        <input style="width: 400px;"type="text" id="email" name="email">
+        
         <label class="container">Software
-          <input type="radio" name="answer" id="software" onchange="changeChoices()">
+          <input type="radio" name="answer" id="software" onchange="switchFunction()">
           <span class="checkmark"></span>
         </label>
         <label class="container">Engineering
-          <input type="radio" name="answer" id="engineering" onchange="changeChoices()">
+          <input type="radio" name="answer" id="engineering" onchange="switchFunction()">
           <span class="checkmark"></span>
-        </label><br>
-        <label>First choice:</label>
-        <select id="choice1"></select>
+        </label>
         
-        <label>Second choice:</label>
-        <select id="choice2"></select><br>
-        <input type="button" value="SUBMIT" onclick="window.location.reload()">
+        <br>
+        <label>First choice</label>
+        <select id="choice1"></select>
+        <label>Second choice</label>
+        <select id="choice2"></select>
+        <br>
+
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
       </form>
     </div>
   </div>
