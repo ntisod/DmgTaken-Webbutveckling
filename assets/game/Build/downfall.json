@@ -1,0 +1,17 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Downfall",
+"productVersion": "1.0",
+"dataUrl": "downfall.data.unityweb",
+"asmCodeUrl": "downfall.asm.code.unityweb",
+"asmMemoryUrl": "downfall.asm.memory.unityweb",
+"asmFrameworkUrl": "downfall.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.12f1"
+}
