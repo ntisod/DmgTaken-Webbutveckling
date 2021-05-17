@@ -46,6 +46,26 @@ img {
   top: 0;
 }
 
+/* ////////// GAME ////////// */
+div.game {
+  display: flex;
+}
+a.downfall {
+  background-color: #00ff00;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.downfall:hover {
+  background-color: #00ff0080;
+}
+div.game div {
+  width: 50%;
+}
+
 
 /* ////////// HEADER ////////// */
 header {
@@ -129,6 +149,7 @@ div.copyright {
   align-items: center;
   height: 32px;
 }
+
 
 
 /* ////////// ICONS //////////*/
